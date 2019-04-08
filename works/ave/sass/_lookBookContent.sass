@@ -1,0 +1,422 @@
+.lookBookContent
+	.container3
+		border: 1px solid #eeeeee
+		border-right: none
+		border-left: none
+	.controler 
+		margin-bottom: 60px
+		margin-top: 50px
+		li:nth-child(5)
+			margin-right: 0
+		li
+			display: inline-block
+			margin-right: 50px
+			a 
+				color: #727272
+				text-transform: uppercase
+				font-size: 13px
+				font-weight: bold
+			a:hover
+				color: #00c8c8
+			.controlerActive
+				color: #00c8c8
+	.lookBookContentItems
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		margin-bottom: 60px
+		.btn 
+			font-size: 16px
+			display: inline-block
+			padding: 15px 25px
+			background-color: transparent
+			text-transform: uppercase
+			border: 1px solid #454647
+		 color: #454647
+			letter-spacing: 2px
+		.btn:hover
+			color: #fff
+			border-color: #00c8c8
+			background-color: #00c8c8
+			transition: all ease 0.3s
+		.itemShort:hover
+			.buttons
+				top: 55%
+				opacity: 1
+		.itemShort:hover, .itemLong:hover, .itemLonger:hover
+			box-shadow: 0px 10px 38px -17px #000
+		.itemShort
+			width: 24%
+			height: 500px
+			position: relative
+			cursor: pointer
+			margin-bottom: 30px
+			transition: all 0.3s ease
+			.itemShortImg
+				height: 100%
+				width: 100%		
+				position: relative
+				overflow: hidden
+				background-color: #f8f8f8
+				img 
+					display: block
+					position: absolute
+					top: 0
+					left: 50%
+					transform: translateX(-50%)
+					height: 100%
+			.ref
+				position: absolute
+				top: 2%
+				left: 2%
+				font-size: 21px
+				color: #9a9a9a
+				text-transform: uppercase
+				sup 
+					font-size: 14px
+			.buttons
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translateX(-50%)
+				opacity: 0
+				transition: all 0.3s ease
+				background-color: transparent
+				a 
+					width: 40px
+					height: 40px
+					line-height: 40px
+					border-radius: 50%
+					background-color: #fff	
+					color: #000
+					display: inline-block
+					font-size: 28px
+					text-align: center
+					margin: 0 14px
+					mix-blend-mode: screen
+		.itemLong
+			width: 49.5%
+			height: 500px
+			background-color: #e8e8ea
+			position: relative
+			transition: all 0.3s ease
+			margin-bottom: 30px
+			.itemLongImg
+				position: absolute
+				top: 0
+				right: 0
+				width: 100%
+				height: 100%
+				overflow: hidden
+				img 
+					width: 100%
+					position: absolute
+					top: -14%
+					left: 26%
+					opacity: 1
+			.itemLongTitle
+				width: 90%
+				margin-left: 3%
+				position: relative
+				z-index: 20
+				margin-top: 8%
+				h3 
+					font-size: 38px
+					text-transform: uppercase
+					font-weight: 400
+					color: #575153
+					margin-bottom: 18px
+					span 
+						font-weight: bold
+				h4
+					font-size: 13px
+					text-transform: uppercase
+					color: #727272
+					margin-bottom: 16px
+				p 
+					width: 57%
+					color: #8e8c8c
+					font-size: 15px
+					margin-bottom: 20px
+				.view
+					margin-top: 10px
+		.itemLonger
+			width: 74.5%
+			display: inline-block
+			height: 500px
+			position: relative
+			background-color: #f1f1f0
+			transition: all 0.3s ease
+			margin-bottom: 30px
+			.itemLongerImg
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				overflow: hidden
+				img 
+					height: 190%
+					position: absolute
+					top: -20%
+					left: 30%
+			.mainTitle
+				font-size: 46px
+				color: #00c8c8
+				font-weight: 400
+				position: absolute
+				z-index: 10
+				top: 45%
+				right: 2%	
+				text-align: right
+				text-transform: uppercase
+				span
+					display: block
+					font-size: 62px
+					font-weight: bold
+			.itemLongerTitle
+				position: relative
+				z-index: 10
+				width: 45%
+				left: 2%
+				top: 10%
+				h3 
+					font-size: 38px
+					color: #575153
+					font-weight: 400
+					text-transform: uppercase
+					margin-bottom: 16px
+					span
+						font-weight: bold
+				h4 
+					font-size: 13px
+					color: #727272
+					text-transform: uppercase
+					margin-bottom: 16px
+				p 
+					font-size: 15px
+					color: #8e8c8c
+					margin-bottom: 20px
+				.shop
+					margin-top: 10px
+@media only screen and (max-width: 1700px)
+	.lookBookContent
+		padding: 0 40px 
+		box-sizing: border-box
+		.lookBookContentItems
+			.btn 
+				font-size: 14px
+			.itemLonger,
+			.itemShort,
+			.itemLong
+				height: 350px
+			.itemLong
+				.itemLongTitle
+					margin-top: 5%
+					h3
+						font-size: 32px
+						margin-bottom: 15px
+					h4 
+						font-size: 12px
+						margin-bottom: 10px
+					p 
+						font-size: 13px
+						margin-bottom: 13px
+			.itemLonger
+				.mainTitle
+					right: 1%
+					font-size: 38px
+					span 
+						font-size: 48px
+				.itemLongerTitle
+					margin-top: 0	
+					width: 43%
+					h3
+						font-size: 24px
+						margin-bottom: 10px
+					h4 
+						font-size: 11px
+						margin-bottom: 10px
+					p 
+						font-size: 13px
+						margin-bottom: 10px
+@media only screen and (max-width: 1210px)
+	.lookBookContent
+		.controler
+			width: 90%
+			li 
+				margin-bottom: 20px
+		.lookBookContentItems
+			margin: 0 auto
+			width: 900px
+			.itemShort
+				width: 32%
+				margin-bottom: 20px
+			.itemShort:nth-child(2)
+				order: 3
+			.itemShort:nth-child(5)
+				order: 7
+			.itemLong
+				width: 66%	
+				margin-bottom: 20px
+			.itemLonger
+				width: 100%
+				margin-bottom: 20px
+@media only screen and (max-width: 980px)
+	.lookBookContent
+		.controler
+			width: 100%
+			li 
+				display: block
+				margin: 0 0 10px 0
+				text-align: center 
+		.lookBookContentItems
+			margin: 0 auto
+			width: 600px
+			.btn 
+				padding: 13px 23px
+			.itemShort
+				width: 49%
+			.itemShort:nth-child(2)
+				order: 0
+			.itemShort:nth-child(5)
+				order: 0
+			.itemLong
+				width: 100%
+			.itemLonger
+				.mainTitle
+					display: none
+				.itemLongerImg
+					img 
+						left: 35%
+				.itemLongerTitle
+					width: 60%
+					h3 
+						font-size: 22px
+@media only screen and (max-width: 680px)
+	.lookBookContent
+		.controler
+		.lookBookContentItems
+			width: 100%
+			max-width: 315px
+			.btn 
+				padding: 10px 20px
+				font-size: 13px
+				margin: 0 auto
+				display: block
+				min-width: 90px
+				width: 35%
+				text-align: center
+			.itemLonger,
+			.itemShort,
+			.itemLong
+				height: 350px
+				width: 100%
+			.itemShort
+				.ref 
+					position: static
+					display: inline-block
+					font-size: 18px	
+					margin-top: 8px
+					color: #33333a
+					sup 
+						font-size: 12px
+				.buttons	
+					position: static
+					opacity: 1
+					transform: none
+					display: inline-block
+					float: left
+					margin: 0 10px 0 18% 
+					width: auto
+					text-align: left
+					.fa-heart
+						float: left
+					a 
+						margin: 0 10px
+						width: auto 
+						height: auto
+						border-radius: 0%
+						background-color: transparent
+						color: #33333a
+						font-size: 24px
+				.itemShortImg
+					height: 290px
+					margin-bottom: 10px
+			.itemLong
+				min-height: 350px
+				height: auto
+				.itemLongTitle
+					position: static
+					text-align: center
+					width: 95%
+					margin-bottom: 20px
+					h3 
+						font-size: 16px
+						margin-bottom: 5px
+					h4 
+						font-size: 11px
+						margin-bottom: 5px
+					p 
+						font-size: 12px
+						width: 100%
+						display: none
+				.itemLongImg
+					position: relative
+					top: 0
+					left: 0
+					overflow: hidden
+					width: 100%
+					height: 235px
+					margin-bottom: 10px
+					img 
+						width: auto
+						max-height: 100%	
+						position: absolute
+						top: 0
+						left: 58% 
+						transform: translateX(-50%)
+			.itemLonger
+				min-height: 350px
+				height: auto
+				.itemLongerTitle
+					position: static
+					text-align: center
+					width: 100%
+					margin-bottom: 20px
+					h3 
+						font-size: 16px
+						margin-bottom: 5px
+					h4 
+						font-size: 11px
+						margin-bottom: 5px
+						width: 90%
+						margin: 0 auto
+					p 
+						font-size: 12px
+						width: 100%
+						display: none
+					.btn 
+						width: 50%
+						max-width: 120px
+						letter-spacing: 0px
+				.itemLongerImg
+					position: relative
+					top: 0
+					left: 0
+					overflow: hidden
+					width: 100%
+					height: 220px
+					margin-bottom: 15px	
+					img 
+						width: auto
+						max-height: 100%	
+						position: absolute
+						top: 0
+						left: 50% 
+						transform: translateX(-50%)
+
+			
+
+
+

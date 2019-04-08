@@ -1,0 +1,248 @@
+.productItems
+	padding: 0 40px
+	box-sizing: border-box
+	.container2
+		padding: 50px 0 60px 0
+		border: 1px solid #f8f8f8
+		box-sizing: border-box
+		border-right: none
+		border-left: none
+		margin-top: -40px
+	ul
+		margin-bottom: 55px
+		.productItemsActive
+			color: #00c8c8
+		li 
+			display: inline-block
+			margin-right: 55px
+			a 
+				font-size: 13px
+				font-weight: bold
+				text-transform: uppercase
+				color: #727272
+			a:hover
+				color: #00c8c8
+	.content
+		width: 100%
+		height: 800px
+		margin: -15px
+	.contentL, .contentR
+		display: inline-block
+		width: 50%
+		float: left 
+		height: 100%
+		.box
+			position: relative
+		.box:hover
+			z-index: 50
+			.item
+				box-shadow: 0px 24px 60px -25px
+			.productTitle
+				box-shadow: 0px 15px 60px -25px
+			.productTitle
+				opacity: 1
+				top: 100%
+			.productPrev
+				right: 3%
+				opacity: 1
+			.fa-info
+				opacity: 1
+				top: 50%
+		.box:nth-child(1),
+		.box:nth-child(2)
+			float: left 
+			display: inline-block
+			width: 50%
+			height: 40%
+			padding: 15px
+			box-sizing: border-box
+		.box:nth-child(3)
+			display: inline-block 
+			width: 100%
+			height: 60%
+			padding: 15px
+			box-sizing: border-box
+			.item 
+				max-height: 700px
+				max-width: 100%
+		.item
+			width: 100%
+			height: 100%
+			max-width: 420px
+			max-height: 500px
+			background-color: #f8f8f8
+			position: relative
+			.fa-info
+				position: absolute
+				display: block
+				width: 40px
+				height: 40px
+				background-color: #fff
+				color: #000
+				border-radius: 50%	
+				line-height: 40px
+				font-size: 30px
+				top: 45%
+				left: 50%
+				transition: all 0.3s ease
+				margin-left: -20px
+				opacity: 0
+				text-align: center
+				mix-blend-mode: screen
+			.price 
+				position: absolute
+				top: 2%
+				left: 2%
+				color: #9a9a9a
+				span 
+					display: inline-block
+					vertical-align: middle
+				.oldPrice
+					margin-right: 10px
+			.productTitle
+				display: block
+				position: absolute
+				top: 80%
+				opacity: 0
+				background-color: #fff
+				text-align: center
+				padding: 20px
+				box-sizing: border-box
+				transition: all 0.3s ease
+				h4
+					font-size: 13px
+					color: #727272
+					margin: 0 0 20px 0
+					text-transform: uppercase
+				p 
+					font-size: 15px	
+					color: #8e8c8c
+					margin-bottom: 15px
+				.productActions
+					button 
+						width: 30px
+						height: 30px
+						font-size: 16px
+						color: #fff
+						text-align: center
+						border-radius: 50%
+						background-color: #727272
+					button:hover
+						background-color: #00c8c8
+			.productImg
+				position: relative
+				overflow: hidden
+				width: 100%  
+				height: 100%  
+				img 
+					position: absolute
+					top: 0
+					left: 50%
+					transform: translateX(-50%)
+					height: 100%
+			.productPrev
+				display: inline-block
+				width: 20%
+				height: 100%
+				position: absolute
+				top: 3%
+				right: 0
+				opacity: 0
+				transition: all 0.3s ease
+				img 
+					max-width: 100%
+					border: 1px solid #fff
+					border-radius: 3px 
+					box-sizing: border-box
+					margin-bottom: 10%
+	.contentR
+		.box:nth-child(1)
+			width: 100%
+			float: none
+			height: 60%
+			.item
+				max-width: 100%
+		.box:nth-child(3)
+			width: 50%
+			float: left
+			height: 40%
+			.item
+				max-width: 420px
+@media only screen and (max-width: 980px)
+	.productItems
+		padding: 0px 30px
+		ul 
+			li 
+				margin-right: 30px
+		.content
+			height: auto
+			margin-right: 0
+			margin-bottom: 0
+		.contentL, .contentR
+			display: block
+			width: 100%
+			float: none
+			height: 650px
+@media only screen and (max-width: 760px)
+	.productItems
+		padding: 0 20px
+		.container2
+			padding: 30px 0 40px 0
+			margin-top: -100px
+		ul
+			margin-bottom: 40px
+			li 
+				text-align: center
+				display: block
+				padding: 3px 0
+				margin: 0
+		.content
+			margin: 0
+		.contentL, .contentR
+			height: 1150px
+			.box:nth-child(1),
+			.box:nth-child(2),
+			.box:nth-child(3)
+				width: 100%
+				display: block
+				float: none
+				height: 33.3%
+			.item
+				max-width: 100%
+				.productTitle
+					position: static
+					opacity: 1
+					height: 30%
+					overflow: hidden
+					h4 
+						margin-bottom: 10px
+					.productActions
+						display: none
+					p 
+						margin-bottom: 0
+						overflow: hidden
+						display: -webkit-box
+						-webkit-line-clamp: 2
+						-webkit-box-orient: vertical
+				.productImg
+					height: 70%
+		.contentR
+			.box:nth-child(3)
+				width: 100%
+				float: none
+				height: 33.3%
+				.item
+					max-width: 100%
+
+@media only screen and (max-width: 480px)
+	.productItems 
+
+
+
+			
+
+
+			
+
+
+

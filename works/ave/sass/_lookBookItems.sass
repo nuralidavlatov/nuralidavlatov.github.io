@@ -1,0 +1,148 @@
+.lookBook
+	height: 528px
+	width: 100%
+	padding: 60px 0 124px 0
+	background-color: #fff
+	.container2
+		max-width: 2000px
+	&-item:nth-child(2)
+		margin: 0 2%
+	&-item
+		width: 32%
+		float: left
+		height: 100%
+		display: inline-block
+		background-color: #f8f8f8
+		position: relative
+		.itemTitle
+			text-align: right
+			width: 56%
+			max-width: 310px
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			right: 8%
+			h3
+				font-size: 48px
+				color: #575153
+				margin-bottom: 25px
+				text-transform: uppercase
+				font-weight: 400
+				span 
+				 display: block 
+				 font-weight: bold
+			p 
+				color: #727272
+				font-size: 15px
+				margin-bottom: 30px
+			.view
+				width: 180px
+				height: 58px
+				line-height: 56px
+				text-align: center
+				display: inline-block
+				background-color: transparent
+				color: #737373
+				text-transform: uppercase
+				letter-spacing: 5px
+				box-sizing: border-box
+				border: 2px solid #737373
+				font-size: 16px
+				transition: all 0.3s ease
+			.view:hover
+				background-color: #00c8c8
+				color: #fff
+				border-color: #00c8c8
+		.itemImg
+			height: 100%
+			overflow: hidden
+			width: 42%
+			position: relative
+			left: 0
+			img 
+				height: 88%
+				position: absolute
+				bottom: 0
+				left: 50%
+				transform: translateX(-50%)
+@media only screen and (max-width: 1800px)
+	.lookBook
+		height: 370px
+		&-item 
+			.itemTitle	
+				width: 50%
+				h3 
+					font-size: 32px
+					margin-bottom: 12px
+				p
+					font-size: 12px 
+					margin-bottom: 20px
+				.view
+					width: 170px
+					height: 48px
+					line-height: 46px	
+					letter-spacing: 3px
+					font-size: 14px
+@media only screen and (max-width: 1300px)
+	.lookBook
+		&-item:nth-child(2)
+			margin: 0 1%
+		&-item 
+			width: 32.6%
+@media only screen and (max-width: 1200px)
+	.lookBook
+		height: auto
+		&-item 
+			height: 370px
+		&-item:nth-child(1),
+		&-item:nth-child(2)
+			width: 49%
+		&-item:nth-child(2)
+			margin: 0 0 20px 2%
+		&-item:nth-child(3)
+			width: 70%
+			display: block
+			float: none
+			clear: both
+			margin: 0 auto 0 auto
+@media only screen and (max-width: 850px)
+	.lookBook
+		padding: 60px 20px 124px 20px
+		box-sizing: border-box
+		&-item:nth-child(1),
+		&-item:nth-child(2),
+		&-item:nth-child(3)
+			display: block
+			width: 100%
+			float: none
+			clear: none
+			margin: 0
+			p 
+				width: 90%
+				margin-right: auto
+				margin-left: auto
+		&-item:nth-child(1),
+		&-item:nth-child(2)
+			margin-bottom: 20px
+@media only screen and (max-width: 500px)
+	.lookBook
+		padding: 60px 20px 60px 20px
+		&-item
+			height: auto
+			padding: 70px 0
+			box-sizing: border-box
+			.itemTitle	
+				right: 0
+				width: 90%
+				position: static
+				transform: none
+				display: block
+				max-width: 90%
+				margin: 0 auto
+				text-align: center
+			.itemImg
+				display: none
+
+
+
+

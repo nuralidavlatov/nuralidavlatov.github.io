@@ -1,0 +1,321 @@
+.productViewContent
+	padding: 0 40px 60px 40px
+	box-sizing: border-box
+	.slider-details
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		margin-bottom: 38px
+	.imageSlider
+		width: 48%
+		height: 700px
+		overflow: hidden
+		display: inline-block
+		.slick-next
+			right: 0	
+		.slick-prev
+			left: 0			
+		.slick-next::before, 
+		.slick-prev::before
+			content: '\2039'
+			width: 45px
+			height: 55px
+			color: #575153
+			font-weight: bold
+			font-size: 50px
+			line-height: 45px
+			display: block
+			transition: all .3s ease
+		.slick-next::before, 
+			content: '\203A'
+		.slick-arrow
+			transition: all .3s ease
+			width: 50px
+			height: 45px
+			background-color: transparent
+			color: #575153
+			position: absolute
+			z-index: 1
+			top: 50%
+			transform: translateY(-50%)
+			font-weight: bold
+		.slick-prev:hover::before, .slick-next:hover::before
+			background-color: #00c8c8
+			color: #fff
+		.item
+			height: 700px	
+			width: 100%
+			position: relative
+			overflow: hidden
+			top: 0
+			left: 0
+			img 
+				height: 100%
+				position: absolute
+				top: 0
+				left: 50%
+				transform: translateX(-50%)
+	.details
+		width: 52%
+		padding-left: 30px
+		box-sizing: border-box
+		display: inline-block
+		h3 
+			font-size: 18px
+			text-transform: uppercase
+			color: #575153
+			margin-bottom: 25px
+		.mark
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			font-size: 14px
+			color: #727272
+			a:hover
+				color: #00c8c8
+		.stars
+			margin-bottom: 20px
+			i 
+				font-size: 16px
+				color: #dfdfde
+			i:hover
+				color: #ded3aa
+			.marced
+				color: #ded3aa
+		.addReview
+			color: #727272
+		.share
+			display: flex
+			margin-bottom: 20px
+			ul 
+				display: flex
+				li:first-child
+					margin-left: 10px
+				li 
+					margin-left: 20px
+				a 
+					color: #8c8c8c
+					font-size: 14px
+		.price 
+			margin-bottom: 35px
+			color: #9a9a9a
+			font-size: 30px
+			.oldPrice
+				margin-right: 18px
+		.productInfo
+			margin-bottom: 35px
+			li 
+				font-size: 13px
+				color: #575153
+				margin-bottom: 14px
+				font-weight: bold
+				text-transform: uppercase
+				span 
+					text-transform: capitalize
+					font-weight: 400
+					font-size: 15px
+			.tags
+			 a 
+			 	color: #00c8c8
+			 	text-transform: capitalize
+			 	font-size: 15px
+			 	font-weight: 400
+		p, .textlist li
+			font-size: 15px
+			color: #8e8c8c
+			line-height: 22px
+		.textlist 
+			list-style: circle
+			margin-left: 20px
+			margin-top: 14px
+			margin-bottom: 35px
+		.optiions
+			.optiionsSection
+				display: inline-block
+				margin-right: 30px
+				margin-bottom: 20px
+				label
+					display: block
+					margin-bottom: 15px
+					font-weight: bold
+					font-size: 13px
+					color: #575153
+					text-transform: uppercase
+				select 
+					width: 169px
+					height: 34px	
+					border: 1px solid #e7e7e7
+					font-size: 13px
+					text-transform: capitalize
+					color: #989898
+					padding: 0 10px
+			.qtySection
+				select
+					width: 70px
+		.buttons
+			margin-top: 10px
+			.btn
+				background-color: transparent
+				color: #454647
+				height: 54px
+				text-align: center
+				font-size: 15px
+				letter-spacing: 1px
+				text-transform: uppercase
+				border: 1px solid #454647
+				transition: all .3s ease
+				margin-bottom: 20px
+				padding: 0 20px
+				i 
+					margin-right: 10px
+					font-size: 18px
+			.cart
+				margin-right: 25px
+			.lookBook
+			.btn:hover
+				background-color: #454647
+				color: #fff
+		.addToCompare
+			margin-top: 10px
+			button 
+				color: #454647
+				font-size: 14px
+				text-transform: uppercase
+				background-color: transparent
+				font-weight: bold
+			i 
+				font-size: 18px
+				color: #fff
+				margin-right: 10px
+				display: inline-block
+				width: 30px
+				height: 30px
+				line-height: 30px
+				text-align: center
+				background-color: #454647
+				border-radius: 50%
+	.data
+		display: flex
+		flex-direction: column
+		position: relative
+		&-nav
+			display: flex
+			background-color: #f8f8f8
+			li:nth-child(5)
+				margin-right: 0
+			li:hover
+				a 
+					color: #fff
+					background-color: #575153
+			li 
+			a 
+				color: #575153
+				text-transform: uppercase
+				font-size: 16px
+				font-weight: bold
+				display: block
+				padding: 20px 30px
+				transition: all .3s ease 
+			&__active a 
+				color: #fff
+				background-color: #575153
+		&-content 
+			display: block
+			width: 97%
+			margin: 25px 0 0 20px
+			background-color: #fff
+			h4 
+				text-transform: uppercase
+				font-size: 13px
+				color: #727272
+				margin-bottom: 18px
+				line-height: 18px
+			p 
+				font-size: 15px
+				color: #8e8c8c
+				margin: 10px 0
+		&-content__header
+			display: none
+			color: #575153
+			text-transform: uppercase
+			font-size: 16px
+			margin-bottom: 20px
+@media only screen and (max-width: 1100px)
+	.productViewContent
+		.imageSlider
+			height: 600px
+			.item
+				height: 600px
+		.data
+			&-nav
+			 width: 100%
+			 li 
+			 	margin: 0
+			 a 	
+			 	font-size: 14px
+			 	min-width: auto
+			 	padding: 18px 15px
+@media only screen and (max-width: 1000px)
+	.productViewContent
+		.imageSlider
+			height: 500px
+			.item
+				height: 500px
+		
+@media only screen and (max-width: 860px)
+	.productViewContent
+		.imageSlider
+			height: 400px
+			.item
+				height: 400px
+		.data
+			&-nav
+				display: none
+			&-content__header
+				display: block
+			&-content
+				margin-left: 0
+				p:nth-child(2)
+					display: none
+
+@media only screen and (max-width: 780px)
+	.productViewContent
+		.slider-details
+			flex-wrap: wrap
+		.imageSlider
+			height: 500px
+			width: 100%
+			margin-bottom: 30px
+			.item
+				height: 500px
+		.details
+			width: 100%
+			padding: 0
+			.productInfo
+				li 
+					margin-bottom: 10px
+			.addReview
+				margin-bottom: 10px
+			.buttons	
+				.btn 
+					height: 49px
+					font-size: 14px
+
+@media only screen and (max-width: 480px)
+	.productViewContent
+		padding: 0 20px 60px 20px
+		.slider-details
+			flex-wrap: wrap
+		.imageSlider
+			height: 320px
+			width: 100%
+			margin-bottom: 30px
+			.item
+				height: 320px
+		.details
+			width: 100%
+			h3 
+				margin-bottom: 10px
+				font-size: 14px
+			.stars
+				width: 100%

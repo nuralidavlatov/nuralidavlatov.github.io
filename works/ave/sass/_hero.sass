@@ -1,0 +1,79 @@
+.hero
+	height: 100vh
+	max-height: 910px
+	width: 100%
+	position: relative
+	background-color: #f8f8f8
+	top: -100px
+	z-index: 10
+	overflow: hidden
+	.container2
+		background-image: url('../../img/heroImg.jpg')
+		background-repeat: no-repeat
+		background-position: 0 0
+		background-size: auto 100%
+	h1 
+		font-size: 450px
+		color: #575153
+		text-align: center
+		line-height: 810px
+		span
+			display: inline-block
+		.h1V 
+			margin: 0 10%
+	&-linkShop
+		color: #454647
+		display: inline-block
+		text-transform: uppercase
+		font-size: 16px
+		padding: 20px 30px
+		border: 2px solid #737373
+		position: absolute
+		bottom: 13%
+		right: 200px
+  letter-spacing: 5px
+  transition: all .3s ease
+ &-linkShop:hover 
+ 	color: #fff
+ 	background-color: #737373
+@media only screen and (max-width: 1700px)
+	.hero
+		height: 650px
+		background-position: 0% 0
+		h1 
+			font-size: 300px
+			line-height: 650px
+		&-linkShop
+			bottom: 13%
+			letter-spacing: 2px
+@media only screen and (max-width: 1100px)
+	.hero
+		h1 
+			font-size: 240px
+			.h1V 
+				margin: 0 5%
+@media only screen and (max-width: 760px)
+	.hero
+		height: 500px
+		.container2	
+			background-position: 30% 0
+		h1
+			font-size: 150px
+			line-height: 500px
+		&-linkShop
+			letter-spacing: 0
+			right: 10%
+			padding: 10px 20px
+			font-size: 14px
+			bottom: 20%
+			text-transform: capitalize
+			color: rgba(#000, 0.9)
+@media only screen and (max-width: 480px)
+	.hero
+		height: 440px
+		top: 0
+		margin-bottom: 100px
+		h1 
+			font-size: 100px
+			line-height: 360px
+			

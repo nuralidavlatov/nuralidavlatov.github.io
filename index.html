@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>Nurali Davlatov</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/sass/style.css">
+</head>
+<body>
+	<nav class="clearfix">
+			<a href="#" class="logo"><s>Nurali Davlatov</s></a>
+			<div class="menu">
+				<ul>
+					<li><a target="_blank" href="https://www.facebook.com/nuralijon.davlatov.52"><i class="fa fa-facebook"></i></a></li>
+					<li><a target="_blank" href="https://vk.com/nurali_web"><i class="fa fa-vk"></i></a></li>
+					<li><a target="_blank" href="https://www.instagram.com/nurali_web/"><i class="fa fa-instagram"></i></a></li>
+					<li><a target="_blank" href="#"><i class="fa fa-share"></i></a></li>
+				</ul>
+					<a href="#contacts" class="da go_to">
+						Заказать Вёрстку
+					</a>
+				<sapn class="humburgerMenu">
+					<span></span>
+				</span>
+			</div>
+		</nav>
+	<div class="wrapper">
+		<header>
+			<div class="header-title">
+				<h1>Идеальная Вёрстка Сайтов</h1>
+				<p>
+					Привет, Меня зовут Нурали Давлатов. Я Сделаю Вам Лучшую Вёрстку Вашего Сайта. Напишите мне на <a href="#contacts" class="go_to">почту</a>, буду счастлив с вами поработать.
+				</p>
+		
+			</div>
+		</header>
+		<!-- /.header -->
+		<div class="portfolio">
+			<div class="controls">
+				<button class="control controlAll" data-filter="all">Все Работы</button>
+				<button class="control" data-filter=".cat2">Корпоративные сайты</button>
+				<button class="control" data-filter=".cat1">Landing P. (Одностраничные сайты)</button>
+				<button class="control" data-filter=".cat3">Интернет Магазины</button>
+			</div>
+				<div class="works clearfix">
+					<div class="works-item mix cat1"><a href="music.html"><img src="images/music.jpg" alt="works preview"></a></div>
+					<!-- /.works-item -->
+					<div class="works-item mix cat3"><a href="ave.html"><img src="images/ave.jpg" alt="works preview"></a></div>
+					<!-- /.works-item -->
+					<div class="works-item mix cat1"><a href="mars.html"><img src="images/mars.jpg" alt="works preview"></a></div>
+					<!-- /.works-item -->
+					<div class="works-item mix cat1"><a href="flat.html"><img src="images/flat.png" alt="works preview"></a></div>
+					<!-- /.works-item -->
+					<div class="works-item mix cat2"><a href="corporativ.html"><img src="images/corporative.jpg" alt="works preview"></a></div>
+					<!-- /.works-item -->
+			</div>
+				<!-- /.works -->
+		</div>
+		<!-- /.portfolio -->
+		<div class="contacts" id="contacts">
+			<div class="container">
+				<div class="contacts-title">
+					<h2>
+						Хотите качественную вёрстку?
+					</h2>
+					<p>Пришлите мне свой макет и инструкции по вёрстке.</p>
+					<button class="massange">Написать письмо</button>
+				</div>
+				<!-- /.contacts-title -->
+					<form action="mailer/smart.php" method="POST" class="clearfix" enctype="multipart/form-data">
+					<input required type="text" name="user_firstName" id="firstName" placeholder="Имя*">
+					<input required type="text" name="user_secondName" id="secondName" placeholder="Фамилия">
+					<input required type="email" name="user_email" id="email" placeholder="Ваш E-mail*">
+					<div class="inpFile">
+						<input type="file" class="inputfile inputfile-2" name="user_file" id="file">
+						<label for="file">
+							<span>Выберите PSD макет <span class="noMetter">(необязательно)</span></span>
+						</label>
+					</div>
+					<textarea name="user_text" required placeholder="Ваш текст*"></textarea>
+					<button>Отправить</button>
+				</form>				
+			</div>
+			<!-- /.container -->
+		</div>
+		<!-- /.contacts -->
+		<div class="works_2">
+			<div class="works_2-item">
+				<a href="music.html"><img src="images/music.jpg" alt="works preview"></a></div>
+			<!-- /.works_2-item -->
+			<div class="works_2-item">
+				<a href="ave.html"><img src="images/ave.jpg" alt="works preview"></a></div>
+			<!-- /.works_2-item -->
+		</div>
+		<!-- /.works_2 -->
+		<footer>
+			<p>
+				&copy; 2018 Nurali Davlatov
+			</p>
+		</footer>
+	</div>
+	<!-- /.wrapper -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/jquery.mixitup.min.js"></script>
+	<script src="js/custom-file-input.js"></script>
+</body>
+</html>
